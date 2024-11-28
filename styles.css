@@ -1,0 +1,113 @@
+.hero {
+    height: 500px;
+    /* Set a specific height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-img-top {
+    height: 200px;
+    /* Adjust image size for consistency */
+    object-fit: cover;
+}
+
+.carousel-item {
+    padding-bottom: 30px;
+    /* Adjust for spacing at the bottom of the carousel */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+ul.list-group {
+    margin-top: 20px;
+}
+
+ul.list-group li {
+    font-size: 1rem;
+    /* Adjust text size */
+}
+
+ul.list-group .list-group-item {
+    padding: 15px;
+    font-weight: 400;
+}
+
+#tickets {
+    background-color: #f8f9fa;
+    /* Light background for the section */
+}
+
+.card {
+    border-radius: 10px;
+    /* Rounded corners for cards */
+}
+
+.card-header {
+    font-size: 1.25rem;
+    /* Header font size */
+    padding: 15px 0;
+    /* Adjust padding */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card a {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+section {
+    min-height: 500px;
+    /* Set a minimum height for each section */
+    height: auto;
+    /* Allow the section to expand beyond the minimum height if necessary */
+}
+
+#gallery .item img {
+    width: 100%;
+    /* Full width of the container */
+    height: 400px;
+    /* Set a uniform height */
+    object-fit: cover;
+    /* Ensure the image maintains aspect ratio and fills the container */
+    border-radius: 10px;
+    /* Optional: Add rounded corners for a polished look */
+}
+
+#lineup {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

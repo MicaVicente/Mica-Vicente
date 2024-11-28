@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Concert Festival</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">ConcertFest</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#lineup">Lineup</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#details">Details</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#tickets">Tickets</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero position-relative text-white text-center py-5">
+            <!-- Video Background -->
+            <video class="position-absolute top-0 start-0 w-100 h-100" autoplay
+                loop muted playsinline style="object-fit: cover;">
+                <source
+                    src="https://videos.pexels.com/video-files/3941289/3941289-uhd_2560_1440_30fps.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay Content -->
+            <div class="container position-relative z-index-1">
+                <h1 class="display-4 text-light">ConcertFest 2024</h1>
+                <p class="lead text-light">Experience the music like never before</p>
+                <p id="countdown" class="fs-4 text-light"></p>
+            </div>
+
+            <!-- Overlay to Darken Video (Optional) -->
+        </header>
+
+        <!-- Lineup Section -->
+        <section id="lineup" class="py-5 bg-light mt-md-5 mb-md-5 mt-3 mb-3">
+            <div class="container-fluid text-center">
+                <h2 class="mb-4">Lineup</h2>
+
+                <!-- Bootstrap Carousel -->
+                <div id="lineupCarousel" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Artist 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://www.nme.com/wp-content/uploads/2022/06/skusta-clee-facebook@2000x1270.jpg" alt="Artist 1"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Skusta Clee</h5>
+                                            <p class="card-text">Known for their
+                                                electrifying performances and
+                                                chart-topping hits, Artist 1 is
+                                                ready to rock the stage!</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 7:00 PM -
+                                                8:00 PM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://latestchika.com/wp-content/uploads/2020/12/Untitled-design-37.jpg" alt="Artist 2"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Flow G</h5>
+                                            <p class="card-text">With a unique
+                                                blend of acoustic and electronic
+                                                music, Artist 2 promises a
+                                                soulful performance.</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 8:30 PM -
+                                                9:30 PM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://www.nme.com/wp-content/uploads/2022/08/Al-James_2022_cut_2.jpg" alt="Artist 3"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Al James</h5>
+                                            <p class="card-text">Get ready for
+                                                an unforgettable show with
+                                                Artist 3’s fusion of rock and
+                                                electronic vibes!</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 10:00 PM -
+                                                11:00 PM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artist 4 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://news-image-api.abs-cbn.com/Prod/20231218071228/431f5b1e79fc75b29cb8c5878b701f904199eec2df01e61b009d5c06a6defa5f.jpg" alt="Artist 4"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Juan Carlos</h5>
+                                            <p class="card-text">Known for their
+                                                smooth vocal style, Artist 4
+                                                will enchant you with their
+                                                ballads.</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 11:30 PM -
+                                                12:30 AM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://factsfive.com/wp-content/uploads/2020/10/Eminem-Wiki-Bio-Age-Net-Worth-and-Other-Facts.jpg" alt="Artist 5"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Eminem</h5>
+                                            <p class="card-text">A blend of
+                                                modern and traditional sounds,
+                                                Artist 5 will take you on a
+                                                musical journey.</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 1:00 AM -
+                                                2:00 AM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card">
+                                        <img src="https://cdn.amomama.com/a8c2b6e8786604759312ad05d9114194.jpg?width=2211&height=1500" alt="Artist 6"
+                                            class="card-img-top img-fluid rounded">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tupac</h5>
+                                            <p class="card-text">With a mix of
+                                                dance beats and electronica,
+                                                Artist 6 will keep the energy
+                                                high.</p>
+                                            <p><strong>Performance
+                                                    Time:</strong> 2:30 AM -
+                                                3:30 AM</p>
+                                            <a href="#"
+                                                class="btn btn-primary btn-sm">Follow
+                                                on Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#lineupCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#lineupCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section id="details" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Event Details</h2>
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-md-6 col-12 mb-3">
+                        <p><strong>Date:</strong> Saturday, May 18, 2024</p>
+                        <p><strong>Location:</strong> Quirino Stadium, Bantay,
+                            Ilocos Sur</p>
+                        <p><strong>Event Timings:</strong> 5:00 PM - 3:00 AM</p>
+                        <p><strong>Ticket Tiers:</strong> General Admission,
+                            VIP, Premium Seating</p>
+                        <p><strong>Facilities:</strong> Food Stalls, Parking,
+                            Restrooms</p>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-md-6 col-12">
+                        <p><strong>Directions:</strong> Located just outside
+                            Vigan City, accessible via Bantay Road. Public
+                            transport options include buses and jeepneys from
+                            Vigan City center.</p>
+                        <p><strong>Prohibited Items:</strong> Weapons, drugs,
+                            large bags, outside alcohol, and fireworks are
+                            prohibited.</p>
+                        <p><strong>Age Restrictions:</strong> This event is open
+                            to all ages. However, VIP and Premium Seating
+                            require 18+ for entry.</p>
+                        <p><strong>Contact Info:</strong> For questions or
+                            emergencies, contact us at <a
+                                href="mailto:support@concertfest.com">vigan@concertfest.com</a>
+                            or call +63 (77) 123-4567.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tickets Section -->
+        <section id="tickets" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Tickets</h2>
+
+                <div class="row">
+                    <!-- General Admission Ticket -->
+                    <div class="col-md-4 col-12 mb-4">
+                        <div class="card shadow-sm">
+                            <div
+                                class="card-header text-center bg-primary text-white">
+                                <h4>General Admission</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">$49.99</h5>
+                                <p class="card-text">Access to the main stage
+                                    and general areas. Perfect for those looking
+                                    to enjoy the concert at an affordable
+                                    price.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle"></i>
+                                        Access to all general areas</li>
+                                    <li><i class="bi bi-check-circle"></i> Food
+                                        and drink available for purchase</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-lg">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VIP Ticket -->
+                    <div class="col-md-4 col-12 mb-4">
+                        <div class="card shadow-sm">
+                            <div
+                                class="card-header text-center bg-warning text-dark">
+                                <h4>VIP</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">$149.99</h5>
+                                <p class="card-text">VIP access with premium
+                                    viewing area and exclusive lounge access.
+                                    Enjoy an elevated concert experience.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle"></i>
+                                        Priority entry</li>
+                                    <li><i class="bi bi-check-circle"></i>
+                                        Exclusive VIP lounge access</li>
+                                </ul>
+                                <a href="#" class="btn btn-warning btn-lg">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Seating Ticket -->
+                    <div class="col-md-4 col-12 mb-4">
+                        <div class="card shadow-sm">
+                            <div
+                                class="card-header text-center bg-success text-white">
+                                <h4>Premium Seating</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">$299.99</h5>
+                                <p class="card-text">Enjoy the best seats in the
+                                    house with unparalleled views and VIP
+                                    treatment.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle"></i>
+                                        Exclusive front-row seating</li>
+                                    <li><i class="bi bi-check-circle"></i>
+                                        Complimentary food and drinks</li>
+                                </ul>
+                                <a href="#" class="btn btn-success btn-lg">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-5" style="height: 300px;">
+            <div class="container text-center">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img
+                            src="https://images.pexels.com/photos/4050654/pexels-photo-4050654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Gallery 1"
+                            class="img-fluid rounded"></div>
+                    <div class="item"><img
+                            src="https://images.pexels.com/photos/2800041/pexels-photo-2800041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Gallery 2"
+                            class="img-fluid rounded"></div>
+                    <div class="item"><img
+                            src="https://images.pexels.com/photos/1692695/pexels-photo-1692695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Gallery 3"
+                            class="img-fluid rounded"></div>
+                    <div class="item"><img
+                            src="https://images.pexels.com/photos/4107356/pexels-photo-4107356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Gallery 4"
+                            class="img-fluid rounded"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">FAQs</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq1"
+                                aria-expanded="true">
+                                What items are prohibited?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Prohibited items include weapons, illegal
+                                substances, and outside food or drinks.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                What is the refund policy?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Tickets are non-refundable unless the event is
+                                canceled.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                Is parking available at the venue?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, there are designated parking areas at the
+                                venue. We recommend arriving early as spaces may
+                                fill up quickly.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                What should I bring to the event?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                We recommend bringing a valid ID, your tickets
+                                (physical or digital), and any personal
+                                essentials such as sunscreen and water bottles.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Are there age restrictions for the event?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                The event is open to all ages. However, some
+                                performances may contain explicit content.
+                                Please check the event schedule for details.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6">
+                                Can I bring my pet to the event?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Pets are not allowed at the event unless they
+                                are service animals. Please check with the venue
+                                for further guidelines.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq7">
+                                Will food and drinks be available at the venue?
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, a variety of food and drink stalls will be
+                                available at the venue. From snacks to full
+                                meals, there will be something for everyone.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 8 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq8">
+                                Can I take photos and videos during the event?
+                            </button>
+                        </h2>
+                        <div id="faq8" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Photography for personal use is allowed.
+                                However, professional cameras and video
+                                recording equipment are prohibited without prior
+                                approval.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+
+                <!-- Contact Info -->
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h4>Get in Touch</h4>
+                        <p>If you have any questions or need more information,
+                            feel free to reach out to us.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Phone:</strong> 0999999999</li>
+                            <li><strong>Email:</strong>
+                                support@concertfest2024.com</li>
+                            <li><strong>Address:</strong> 123 Calle Crisologo,
+                                Vigan City, Ilocos Sur, Philippines</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Location</h4>
+                        <!-- Location Map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15572.796854053451!2d120.38924320567063!3d17.574437319911785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab85c27a24b83d%3A0x18b1a4e35a3fe7b!2sVigan%20City%2C%20Ilocos%20Sur%2C%20Philippines!5e0!3m2!1sen!2sin!4v1626721477574!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Send Us a Message</h4>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <!-- Name Field -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full
+                                        Name</label>
+                                    <input type="text" class="form-control"
+                                        id="name" placeholder="Your Name"
+                                        required>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email
+                                        Address</label>
+                                    <input type="email" class="form-control"
+                                        id="email" placeholder="Your Email"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your
+                                    Message</label>
+                                <textarea class="form-control" id="message"
+                                    rows="4" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 ConcertFest. All Rights Reserved.</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Include Owl Carousel JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+    // Countdown Timer Script
+    const eventDate = new Date("May 18, 2024 19:00:00").getTime();
+    const countdownElement = document.getElementById('countdown');
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      if (distance < 0) {
+        countdownElement.innerText = "The event has started!";
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      countdownElement.innerText = `${days} Days ${hours} Hours ${minutes} Minutes`;
+    }, 1000);
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,                  // Number of images shown at once
+            loop: true,                // Infinite loop
+            autoplay: true,            // Auto-rotation
+            autoplayTimeout: 1500,     // Time between each slide (3 seconds)
+            autoplayHoverPause: true,  // Pause on hover
+            nav: false,                // No navigation buttons
+            dots: false,               // No pagination dots
+            animateOut: 'fadeOut',     // Fade out animation
+            animateIn: 'fadeIn',       // Fade in animation
+        });
+    });
+  </script>
+    </body>
+</html>
