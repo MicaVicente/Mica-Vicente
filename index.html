@@ -17,7 +17,7 @@
     <body>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">ConcertFest</a>
                 <button class="navbar-toggler" type="button"
@@ -53,21 +53,24 @@
                 Your browser does not support the video tag.
             </video>
 
+            <!-- Overlay to Darken Video -->
+            <div class="position-absolute top-0 start-0 w-100 h-100"
+                style="background-color: rgba(0, 0, 0, 0.5);"></div>
+
             <!-- Overlay Content -->
             <div class="container position-relative z-index-1">
                 <h1 class="display-4 text-light">ConcertFest 2024</h1>
-                <p class="lead text-light">Experience the music like never before</p>
+                <p class="lead text-light">Experience the music like never
+                    before</p>
                 <p id="countdown" class="fs-4 text-light"></p>
             </div>
-
-            <!-- Overlay to Darken Video (Optional) -->
         </header>
 
         <!-- Lineup Section -->
         <section id="lineup" class="py-5 bg-light mt-md-5 mb-md-5 mt-3 mb-3">
-            <div class="container-fluid text-center">
+            <div class="container text-center">
+                <!-- Changed from container-fluid to container -->
                 <h2 class="mb-4">Lineup</h2>
-
                 <!-- Bootstrap Carousel -->
                 <div id="lineupCarousel" class="carousel slide"
                     data-bs-ride="carousel">
@@ -77,10 +80,13 @@
                             <div class="row">
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://www.nme.com/wp-content/uploads/2022/06/skusta-clee-facebook@2000x1270.jpg" alt="Artist 1"
+                                        <img
+                                            src="https://www.nme.com/wp-content/uploads/2022/06/skusta-clee-facebook@2000x1270.jpg"
+                                            alt="Artist 1"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
-                                            <h5 class="card-title">Skusta Clee</h5>
+                                            <h5 class="card-title">Skusta
+                                                Clee</h5>
                                             <p class="card-text">Known for their
                                                 electrifying performances and
                                                 chart-topping hits, Artist 1 is
@@ -96,7 +102,9 @@
                                 </div>
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://latestchika.com/wp-content/uploads/2020/12/Untitled-design-37.jpg" alt="Artist 2"
+                                        <img
+                                            src="https://latestchika.com/wp-content/uploads/2020/12/Untitled-design-37.jpg"
+                                            alt="Artist 2"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
                                             <h5 class="card-title">Flow G</h5>
@@ -115,7 +123,9 @@
                                 </div>
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://www.nme.com/wp-content/uploads/2022/08/Al-James_2022_cut_2.jpg" alt="Artist 3"
+                                        <img
+                                            src="https://www.nme.com/wp-content/uploads/2022/08/Al-James_2022_cut_2.jpg"
+                                            alt="Artist 3"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
                                             <h5 class="card-title">Al James</h5>
@@ -140,10 +150,13 @@
                             <div class="row">
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://news-image-api.abs-cbn.com/Prod/20231218071228/431f5b1e79fc75b29cb8c5878b701f904199eec2df01e61b009d5c06a6defa5f.jpg" alt="Artist 4"
+                                        <img
+                                            src="https://news-image-api.abs-cbn.com/Prod/20231218071228/431f5b1e79fc75b29cb8c5878b701f904199eec2df01e61b009d5c06a6defa5f.jpg"
+                                            alt="Artist 4"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
-                                            <h5 class="card-title">Juan Carlos</h5>
+                                            <h5 class="card-title">Juan
+                                                Carlos</h5>
                                             <p class="card-text">Known for their
                                                 smooth vocal style, Artist 4
                                                 will enchant you with their
@@ -159,7 +172,9 @@
                                 </div>
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://factsfive.com/wp-content/uploads/2020/10/Eminem-Wiki-Bio-Age-Net-Worth-and-Other-Facts.jpg" alt="Artist 5"
+                                        <img
+                                            src="https://factsfive.com/wp-content/uploads/ 2020/10/Eminem-Wiki-Bio-Age-Net-Worth-and-Other-Facts.jpg"
+                                            alt="Artist 5"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
                                             <h5 class="card-title">Eminem</h5>
@@ -178,7 +193,9 @@
                                 </div>
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="card">
-                                        <img src="https://cdn.amomama.com/a8c2b6e8786604759312ad05d9114194.jpg?width=2211&height=1500" alt="Artist 6"
+                                        <img
+                                            src="https://cdn.amomama.com/a8c2b6e8786604759312ad05d9114194.jpg?width=2211&height=1500"
+                                            alt="Artist 6"
                                             class="card-img-top img-fluid rounded">
                                         <div class="card-body">
                                             <h5 class="card-title">Tupac</h5>
